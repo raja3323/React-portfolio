@@ -1,0 +1,45 @@
+.p{
+    width: 300px;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+
+.p-browser{
+    height: 20px;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+
+.p-circle{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 3px;
+}
+
+
+.p-img{
+    width: 100%;
+    transition: all 7s ease;
+    z-index: 2;
+}
+
+.p:hover .p-img{
+    transform: translateY(-70%);
+}
+
+@media screen and (max-width: 480px) {
+    .p{
+        width: 40%;
+        height: 20vh;
+    }
+}
